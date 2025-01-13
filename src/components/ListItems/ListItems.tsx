@@ -1,10 +1,11 @@
 
-function ListItems() {
+function ListItems({listItem, setListItem}) {
+
     return (
         <>
             <ul>
             <div className='list-item'>
-                <li>Wash clothes</li>
+                <li>{listItem}</li>
                 <button>Edit</button>
                 <button>Mark as done</button>
                 <button>Remove</button>
