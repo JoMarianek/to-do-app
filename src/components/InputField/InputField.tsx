@@ -7,13 +7,10 @@ interface InputFieldProp{
 function InputField({ setListItem }: InputFieldProp) {
     return (
         <>
-            <form action="">
-                <input type="text" onChange={(event) => setListItem = event.target.value}/>
-                <button onClick={setListItem}>Add</button>
-            </form>
+            <input type="text" onChange={(event) => setListItem(event.target.value)}/>
+            <button onClick={setListItem}>Add</button>
         </>
     )
-
 }
 
 export default InputField
