@@ -28,3 +28,7 @@ function ListItems({listItem, setListItem}) {
 }
 
 export default ListItems
+
+
+//for each add click of the button create a new list item element that has the list item as text but then somehow the 
+// i think ListItems needs to be a child of input field and onlick it gets called? but then it would keep being rerendered and old listitem values wouldnt persist

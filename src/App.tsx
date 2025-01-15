@@ -1,5 +1,4 @@
 
-import './App.css'
 import InputField from './components/InputField/InputField'
 import ListItems from './components/ListItems/ListItems'
 

@@ -1,7 +1,9 @@
 :root {
+  display: flex;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 1vw;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -11,10 +13,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 a {
@@ -27,18 +26,18 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  margin: 0 auto;
   min-width: 320px;
+  max-width: 1280px;
   min-height: 100vh;
+  text-align: center;
 }
 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
@@ -66,7 +65,7 @@ button {
 
 input {
     margin: 5% 1%;
-    font-size: 2vh;
+    font-size: 1.5rem;
 }
 
 input[type="submit"] {
@@ -78,11 +77,17 @@ input[type="submit"] {
     align-items: center;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
 li {
     width: 50%;
     margin-right: 50px;
     color: #00b8ff;
-    font-size: 2vh
+    font-size: 1.5rem;
 }
 
 @media (prefers-color-scheme: light) {
