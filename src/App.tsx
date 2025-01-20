@@ -7,14 +7,14 @@ import { useState } from 'react';
 
 function App() {
 
-    const [listItem, setListItem] = useState<string>('');
+    const [listItems, setListItems] = useState<Array<string>>([]);
 
   return (
     <>
       <div>
         <h1>To-Dos</h1>
-        <InputField setListItem={setListItem}/>
-        <ListItems listItem={listItem} setListItem={setListItem}/>
+        <InputField listItems={listItems} setListItems={setListItems}/>
+        <ListItems listItems={listItems} setListItem={setListItems}/>
         <button>Clear list</button>
       </div>
     </>
