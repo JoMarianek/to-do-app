@@ -1,28 +1,29 @@
 
-function ListItems({listItems, setListItems}) {
+interface ListItemsProps{
+    listItems: Array<string>
+}
 
+function renderItem({listItems}: ListItemsProps) {
+    return listItems.map((item: string) =>
+        <>
+            <li>
+                <span>{item}</span>
+                <button>Edit</button>
+                <button>Mark as done</button>
+                <button>Remove</button>
+            </li>
+        </>
+    )
+}
+
+//Alex: better to have renderItem inline of ListItem to avoid prop drilling?
+
+function ListItems({listItems}: ListItemsProps) {
     return (
         <>
             <ul>
-            <div className='list-item'>
-                <li>{listItems}</li>
-                <button>Edit</button>
-                <button>Mark as done</button>
-                <button>Remove</button>
-            </div>
-            <div className='list-item'>
-                <li>Walk dog</li>
-                <button>Edit</button>
-                <button>Mark as done</button>
-                <button>Remove</button>
-            </div>
-            <div className='list-item'>
-                <li>Go to gym</li>
-                <button>Edit</button>
-                <button>Mark as done</button>
-                <button>Remove</button>
-            </div>
-        </ul>
+                {renderItem({listItems})}
+            </ul>
         </>
     )
 }

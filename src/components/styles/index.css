@@ -84,10 +84,16 @@ ul {
 }
 
 li {
+    list-style-position: inside;
+    text-wrap: nowrap;
     width: 50%;
     margin-right: 50px;
     color: #00b8ff;
     font-size: 1.5rem;
+}
+
+span {
+    min-width: 70px;
 }
 
 @media (prefers-color-scheme: light) {

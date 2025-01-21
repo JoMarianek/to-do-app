@@ -6,7 +6,6 @@ interface InputFieldProp{
     setListItems: React.Dispatch<SetStateAction<Array<string>>>;
 }
 
-
 function InputField({listItems, setListItems }: InputFieldProp) {
     const[input, setInput] = useState<string>('');
     return (
@@ -18,3 +17,4 @@ function InputField({listItems, setListItems }: InputFieldProp) {
 }
 
 export default InputField
+// i need to onClick call a function that maps over the array and creates a li for each item

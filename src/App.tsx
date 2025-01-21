@@ -14,7 +14,7 @@ function App() {
       <div>
         <h1>To-Dos</h1>
         <InputField listItems={listItems} setListItems={setListItems}/>
-        <ListItems listItems={listItems} setListItem={setListItems}/>
+        <ListItems listItems={listItems}/>
         <button>Clear list</button>
       </div>
     </>
