@@ -72,28 +72,32 @@ input[type="submit"] {
     color: #00ff9f;
 }
 
-.list-item {
-    display: flex;
-    align-items: center;
-}
-
 ul {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 37vw;
+    gap: 15px;
 }
 
 li {
-    list-style-position: inside;
+    display: flex;
+    justify-content: space-between;
     text-wrap: nowrap;
-    width: 50%;
-    margin-right: 50px;
     color: #00b8ff;
     font-size: 1.5rem;
+    gap: 20px;
+    align-items: center;
 }
 
-span {
-    min-width: 70px;
+span::before {
+    content: "◦";
+    margin-right: 15px;
+}
+
+
+.CUD-buttons {
+    display: flex;
+    justify-content: right;
 }
 
 @media (prefers-color-scheme: light) {

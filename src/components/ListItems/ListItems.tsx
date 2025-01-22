@@ -8,9 +8,11 @@ function renderItem({listItems}: ListItemsProps) {
         <>
             <li>
                 <span>{item}</span>
-                <button>Edit</button>
-                <button>Mark as done</button>
-                <button>Remove</button>
+                <div className="CUD-buttons">
+                    <button>Edit</button>
+                    <button>Mark as done</button>
+                    <button>Remove</button>
+                </div>
             </li>
         </>
     )
