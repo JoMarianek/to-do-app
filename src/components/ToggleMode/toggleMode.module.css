@@ -1,0 +1,16 @@
+.toggleHeader {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggleButton {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.toggleSvg {
+    height: 30px;
+   vertical-align: middle;
+}

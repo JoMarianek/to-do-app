@@ -1,4 +1,4 @@
-
+import ToggleMode from './components/ToggleMode/ToggleMode';
 import InputField from './components/InputField/InputField'
 import ListItems from './components/ListItems/ListItems'
 
@@ -15,6 +15,7 @@ function App() {
   return (
     <>
       <div>
+        <ToggleMode/>
         <h1>To-Dos</h1>
         <InputField listItems={listItems} setListItems={setListItems}/>
         <ListItems listItems={listItems} /*remove={handleRemove}*//>
