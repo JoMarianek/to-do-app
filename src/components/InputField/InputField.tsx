@@ -11,10 +11,11 @@ function InputField({listItems, setListItems }: InputFieldProp) {
     return (
         <>
             <input type="text" onChange={(event) => setInput(event.target.value)}/>
-            <button onClick = {() => setListItems([...listItems, input])}>Add</button>
+            <button onClick = {() => {setListItems([...listItems, input]); setInput('')}}>Add</button> 
         </>
     )
 }
 
 export default InputField
-// i need to onClick call a function that maps over the array and creates a li for each item
+//TODO: onClick set inut value to empty string
+// add keys to the array items

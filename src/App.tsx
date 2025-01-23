@@ -4,6 +4,9 @@ import ListItems from './components/ListItems/ListItems'
 
 import { useState } from 'react';
 
+// function handleRemove() {
+
+// }
 
 function App() {
 
@@ -14,7 +17,7 @@ function App() {
       <div>
         <h1>To-Dos</h1>
         <InputField listItems={listItems} setListItems={setListItems}/>
-        <ListItems listItems={listItems}/>
+        <ListItems listItems={listItems} /*remove={handleRemove}*//>
         <button>Clear list</button>
       </div>
     </>
