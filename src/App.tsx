@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 function App() {
 
-    const [listItems, setListItems] = useState<Array<string>>([]);
+    const [listItems, setListItems] = useState<Array<{ id: string, text:string }>>([]);
 
   return (
     <>
